@@ -115,14 +115,14 @@ main section.col2 {
   float: right;
   margin-bottom: 1.3em;
   margin-top: 1em;
-  padding: 2em;
+  padding: 1em;
   width: 40%;
 }
 main section.col2 img {
   border: 1px solid grey;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 10px;
   width: 100%;
 }
