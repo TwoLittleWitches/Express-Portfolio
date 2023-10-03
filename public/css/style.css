@@ -5,6 +5,9 @@ Date: 09/27/2023
 */
 
 /* PAGE */
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
@@ -55,6 +58,14 @@ header img {
   min-height: 200px;
   border-top-right-radius: 10em;
 }
+
+#about header section {
+  background: url("/img/hero/about-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 200px;
+  border-top-right-radius: 10em;
+}
+
 /* GENERAL */
 
 a:link {
@@ -96,11 +107,12 @@ main section.col1 {
   box-sizing: border-box;
   display: inline;
   float: left;
-  margin-bottom: 1.3em;
+  margin-bottom: 1em;
   margin-top: 1em;
-  margin-left: 0;
+  margin-left: 0px;
+  margin-right: 1em;
   padding: 2em;
-  width: 59%;
+  width: 58%;
 }
 main section.col1 div {
   box-sizing: border-box;
@@ -112,7 +124,7 @@ main section.col2 {
   border-radius: 1em;
   box-sizing: border-box;
   display: inline;
-  float: right;
+  float: left;
   margin-bottom: 1.3em;
   margin-top: 1em;
   padding: 1em;
@@ -125,6 +137,21 @@ main section.col2 img {
   margin: 10px auto;
   padding: 10px;
   width: 100%;
+}
+main#about section.col2 {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 1em;
+  box-sizing: border-box;
+  display: inline;
+  float: right;
+  margin-bottom: 0em;
+  margin-top: 1em;
+  padding: 0em;
+  width: 40%;
+}
+main#about section.col2 img {
+  margin: 0px auto;
+  padding: 0px;
 }
 
 main#home aside {
