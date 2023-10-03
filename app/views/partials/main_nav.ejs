@@ -1,0 +1,76 @@
+<!--
+Filename: main_nav.ejs
+Author: Samantha Shirley (#301240317)
+Date: 09/27/2023
+-->
+
+<!-- Main Navigation -->
+<header>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img
+            src="/img/brand/logo.png"
+            alt="logo"
+            style="width: 100px; height: 100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <% if (title=="Home") { %>
+              <a class="nav-link active" href="/home">Home</a>
+              <% } else { %>
+              <a class="nav-link" href="/home">Home</a>
+              <% } %>
+            </li>
+
+            <li class="nav-item">
+              <% if (title=="About Me") { %>
+              <a class="nav-link active" href="/about-me">About Me</a>
+              <% } else { %>
+              <a class="nav-link" href="/about-me">About Me</a>
+              <% } %>
+            </li>
+
+            <li class="nav-item">
+              <% if (title=="Projects") { %>
+              <a class="nav-link active" href="/projects">Projects</a>
+              <% } else { %>
+              <a class="nav-link" href="/projects">Projects</a>
+              <% } %>
+            </li>
+
+            <li class="nav-item">
+              <% if (title=="Services") { %>
+              <a class="nav-link active" href="/services">Services</a>
+              <% } else { %>
+              <a class="nav-link" href="/services">Services</a>
+              <% } %>
+            </li>
+
+            <li class="nav-item">
+              <% if (title=="Contact Me") { %>
+              <a class="nav-link active" href="/contact-me">Contact Me</a>
+              <% } else { %>
+              <a class="nav-link" href="/contact-me">Contact Me</a>
+              <% } %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
