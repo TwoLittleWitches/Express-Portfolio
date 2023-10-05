@@ -144,7 +144,8 @@ main section.col2 {
   padding: 1em;
   width: 40%;
 }
-main section.col2 img {
+main section.col2 img,
+img.gallery {
   border: 1px solid grey;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
