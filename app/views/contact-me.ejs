@@ -1,5 +1,5 @@
 <!--
-Filename: contact-me.ejs
+Filename: about-me.ejs
 Author: Samantha Shirley (#301240317)
 Date: 09/27/2023
 -->
@@ -12,16 +12,149 @@ Date: 09/27/2023
 
 <!-- MAIN BODY SECTION -->
 
-<main class="container">
+<!-- MAIN -->
+<main id="contact" class="container">
+  <header id="hero">
+    <section></section>
+  </header>
+
+  <!-- ROW #1 COLUMNS -->
   <section>
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>Coming soon</p>
+    <ul>
+      <li>
+        <!-- FORM -->
+
+        <form>
+          <fieldset>
+            <h2>Contact Me</h2>
+            <label for="name">Full Name*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              pattern="^[a-zA-Z\s\.,-]+$"
+              required
+            />
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@email.com"
+              pattern="^[a-z0-9\._-]+@[\da-z\.-]+\.[a-z]{2,3}$"
+              required
+            />
+            <label for="message">Message*</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="30"
+              required
+            ></textarea>
+            <input type="hidden" id="url" name="url" value="/index.ejs" />
+            <p class="small">* Required fields</p>
+            <button onClick="submit(event)">Send Message</button>
+          </fieldset>
+        </form>
+        <script>
+          const submit = (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("userEmail").value;
+            const message = document.getElementById("message").value;
+            const url = document.getElementById("url").value;
+
+            const option = {
+              headers: {
+                "Content-Type": "application/json",
+              },
+              method: "POST",
+              body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message,
+                url: url,
+              }),
+              redirect: "follow",
+            };
+          };
+        </script>
+      </li>
+      <li>
+        <h4>Let's Talk</h4>
+        <p>
+          Have a project in mind?<br />
+          Let's collaborate!
+        </p>
+
+        <p>
+          By phone: 888-888-8888<br />
+          By email: samantha@email.com
+        </p>
+        <h4>On Social Media</h4>
+        <p></p>
+        <aside>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/two.little.witches/"
+                title="Instagram"
+                target="_blank"
+              >
+                <img
+                  src="img/social/instagram.png"
+                  alt="Find Me on Instagram"
+                  title="Find Me on Instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/samanthashirleyart/"
+                title="LinkedIn"
+                target="_blank"
+              >
+                <img
+                  src="img/social/linkedin.png"
+                  alt="Find Me on LinkedIn"
+                  title="Find Me on LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/TwoLittleWitches"
+                title="GitHub"
+                target="_blank"
+              >
+                <img
+                  src="img/social/github.png"
+                  alt="Find Me on GitHub"
+                  title="Find Me on GitHub"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.samanthashirley.com"
+                title="My Official Website"
+                target="_blank"
+              >
+                <img
+                  src="img/social/website.png"
+                  alt="My Official Website"
+                  title="My Official Website"
+              /></a>
+            </li>
+          </ul>
+        </aside>
+      </li>
+    </ul>
   </section>
+
+  <!-- FOOTER SECTION -->
+
+  <!-- Copyright -->
+  <%- include ('partials/bottom_nav.ejs') %>
+  <!--Script Section-->
+  <%- include ('partials/footer.ejs') %>
 </main>
-
-<!-- FOOTER SECTION -->
-
-<!-- Copyright -->
-<%- include ('partials/bottom_nav.ejs') %>
-<!--Script Section-->
-<%- include ('partials/footer.ejs') %>

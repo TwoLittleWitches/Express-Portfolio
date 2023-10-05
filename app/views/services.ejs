@@ -1,5 +1,5 @@
 <!--
-Filename: services.ejs
+Filename: about-me.ejs
 Author: Samantha Shirley (#301240317)
 Date: 09/27/2023
 -->
@@ -12,16 +12,41 @@ Date: 09/27/2023
 
 <!-- MAIN BODY SECTION -->
 
-<main class="container">
+<!-- MAIN -->
+<main id="services" class="container">
+  <header id="hero">
+    <section></section>
+  </header>
+
+  <!-- ROW #1 COLUMNS -->
   <section>
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>Coming soon</p>
+    <ul>
+      <li>
+        <!-- COLUMN #1 -->
+        <h2>Art & Design</h2>
+        <div>Animation - 2D & 3D (Blender)</div>
+        <div>
+          Illustration & Graphic Design - PhotoShop, Illustrator, Canva,
+          InDesign
+        </div>
+        <div>Video Presentations</div>
+      </li>
+      <li>
+        <!-- COLUMN #2 -->
+        <h2>Programming</h2>
+        <div>
+          Web Programming - HTML, CSS, JavaScript, PHP, NodeJS, ExpressJS
+        </div>
+        <div>Database Management - Oracle, MySQL, Mongo</div>
+        <div>Game Development - JavaScript, C#, Unity</div>
+      </li>
+    </ul>
   </section>
+
+  <!-- FOOTER SECTION -->
+
+  <!-- Copyright -->
+  <%- include ('partials/bottom_nav.ejs') %>
+  <!--Script Section-->
+  <%- include ('partials/footer.ejs') %>
 </main>
-
-<!-- FOOTER SECTION -->
-
-<!-- Copyright -->
-<%- include ('partials/bottom_nav.ejs') %>
-<!--Script Section-->
-<%- include ('partials/footer.ejs') %>

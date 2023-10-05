@@ -55,14 +55,28 @@ header img {
 #home header section {
   background: url("/img/hero/index-hero-image.jpg") top;
   background-size: cover;
-  min-height: 200px;
+  min-height: 240px;
   border-top-right-radius: 10em;
 }
 
 #about header section {
   background: url("/img/hero/about-hero-image.jpg") top;
   background-size: cover;
-  min-height: 200px;
+  min-height: 240px;
+  border-top-right-radius: 10em;
+}
+
+#services header section {
+  background: url("/img/hero/services-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 240px;
+  border-top-right-radius: 10em;
+}
+
+#contact header section {
+  background: url("/img/hero/contact-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 240px;
   border-top-right-radius: 10em;
 }
 
@@ -154,19 +168,57 @@ main#about section.col2 img {
   padding: 0px;
 }
 
-main#home aside {
+main section {
+  padding: 1rem 1rem 0 1rem;
+}
+
+main section > ul {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+
+main section > ul > li {
+  border: 1px solid #e2e2e2;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 1rem;
+  list-style-type: none;
+  min-height: 150px;
+  position: relative;
+  padding: 1em;
+}
+main section > ul > li > p {
+  line-height: 1.2;
+  padding: 0.5em 0.75em;
+}
+
+main section > ul > li > a {
+  color: rgb(179, 19, 51);
+}
+
+main section > ul > li > p > a {
+  color: #444444;
+}
+
+main section > ul > li > p > a:hover {
+  font-weight: bold;
+}
+
+main aside {
   margin: 0 auto;
   text-align: center;
 }
-main#home aside img {
+main aside img {
   width: 5vw;
 }
 
-main#home aside ul {
+main aside ul {
   margin: 0 auto;
+  padding-left: 0;
 }
 
-main#home aside ul li {
+main aside ul li {
   color: gray;
   display: inline;
 
@@ -175,7 +227,62 @@ main#home aside ul li {
   padding: 10px;
 }
 
-main#home aside ul li a {
+main aside ul li a {
   color: gray;
   text-decoration: none;
+}
+#contact main > section ul li {
+  display: block;
+  margin: 0 auto;
+  background-color: lightgrey;
+  padding: 2em;
+  width: 100%;
+  border-radius: 0.5rem;
+  list-style-type: none;
+  min-height: 150px;
+  position: relative;
+}
+
+/****************************************************************************
+  4. FORM STYLES 
+****************************************************************************/
+
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 2px solid white;
+}
+
+legend {
+  margin-bottom: 10px;
+}
+
+input {
+  margin: 5px 0 10px 0;
+  height: 2em;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+input#submit {
+  font-size: 1.2em;
+  margin-top: 10px;
+  transition: background-color 2s;
+}
+
+input#submit:hover {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
 }
