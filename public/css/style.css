@@ -39,6 +39,12 @@ footer .navbar-text {
   margin: 0 auto;
   padding: 20px;
 }
+.subtitle,
+.subtitle a {
+  color: gray;
+  font-size: 0.8em;
+  margin-top: -10px;
+}
 
 header img {
   width: 100%;
@@ -61,6 +67,13 @@ header img {
 
 #about header section {
   background: url("/img/hero/about-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 240px;
+  border-top-right-radius: 10em;
+}
+
+#projects header section {
+  background: url("/img/hero/projects-hero-image.jpg") top;
   background-size: cover;
   min-height: 240px;
   border-top-right-radius: 10em;
@@ -178,6 +191,8 @@ main section > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 main section > ul > li {
@@ -243,7 +258,17 @@ main aside ul li a {
   min-height: 150px;
   position: relative;
 }
-
+main#projects section ul li video {
+  background-color: white;
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  margin: 1em auto;
+  margin-bottom: 0.4em;
+}
 /****************************************************************************
   4. FORM STYLES 
 ****************************************************************************/

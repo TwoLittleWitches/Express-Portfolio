@@ -1,5 +1,5 @@
 <!--
-Filename: projects.ejs
+Filename: about-me.ejs
 Author: Samantha Shirley (#301240317)
 Date: 09/27/2023
 -->
@@ -12,16 +12,192 @@ Date: 09/27/2023
 
 <!-- MAIN BODY SECTION -->
 
-<main class="container">
+<!-- MAIN -->
+<main id="projects" class="container">
+  <header id="hero">
+    <section></section>
+  </header>
+
+  <!-- ROW #1 -->
+
   <section>
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>Coming soon</p>
+    <ul>
+      <!-- COLUMN #1 -->
+      <li>
+        <h2>Company Poster</h2>
+        <figure>
+          <img
+            class="gallery"
+            src="/img/projects/iDream.jpg"
+            alt="iDream Interactive"
+            title="iDream Interactive"
+          />
+        </figure>
+        <div class="subtitle">
+          <a href="/img/projects/iDream-Interactive.jpg" target="_blank"
+            >View full size poster <img src="/img/brand/link.png"
+          /></a>
+        </div>
+        <p></p>
+        <h5>iDream Interactive</h5>
+        <p>
+          Brief: Create a company profile poster for an information technology
+          firm in the Windsor area. Research a local company and develop an
+          attractive one-page profile.
+        </p>
+      </li>
+      <!-- COLUMN #2 -->
+      <li>
+        <h2>Weather App</h2>
+        <figure>
+          <img
+            class="gallery"
+            src="/img/projects/weather-bytes-app.jpg"
+            alt="Weather App"
+            title="Weather App"
+          />
+        </figure>
+        <div class="subtitle">
+          <a href="https://kind-edison-075776.netlify.app/" target="_blank"
+            >Get your live weather forecast <img src="/img/brand/link.png"
+          /></a>
+        </div>
+        <p></p>
+        <h5>Weather Bytes</h5>
+        <p>
+          Brief: Develop a live API weather app which gather the weather
+          forecast for the users current location (by request) or for any city
+          in the world. Forecast data provided by openweathermap.org.
+        </p>
+      </li>
+    </ul>
   </section>
+
+  <!-- ROW #2 -->
+
+  <section>
+    <ul>
+      <!-- COLUMN #1 -->
+
+      <li>
+        <h2>Game App</h2>
+        <figure>
+          <img
+            class="gallery"
+            src="/img/projects/match-maker.jpg"
+            alt="Match Maker Game"
+            title="Match Maker"
+          />
+        </figure>
+        <div class="subtitle">
+          <a
+            href="https://studio.code.org/projects/applab/ZU-HvXPhrTxcVHQ5dDzOo0xc3XFT7F3rRWfNCzY5EU0"
+            target="_blank"
+            >Find your match <img src="/img/brand/link.png"
+          /></a>
+        </div>
+        <p></p>
+        <h5>Match Maker</h5>
+        <p>
+          Brief - Develop a simple matching game using Javascript on Code
+          Studio. Must include different levels of difficulty and a scoreboard.
+        </p>
+      </li>
+      <!-- COLUMN #2 -->
+      <li>
+        <h2>Social Media PSA</h2>
+        <video poster="/img/projects/social-media-video-poster.jpg" controls>
+          <source src="/video/psa-presentation.mp4" type="video/mp4" />
+          <img
+            src="/img/projects/social-media-psa.jpg"
+            alt="PSA Video"
+            title="Social Media PSA - Keeping Up With The Kardashians"
+          />
+        </video>
+        <div class="subtitle">
+          <a href="/video/psa-presentation.mp4" target="_blank"
+            >View full size video <img src="/img/brand/link.png"
+          /></a>
+        </div>
+        <p></p>
+        <h5>Keeping Up with the Kardashians?</h5>
+        <p>
+          Brief: Produce a captivating second public service announcement video
+          about the potential dangers of social media. The unattainable beauty
+          norms created by celebrities and influencers on social media is a
+          topic close to my heart as my daughter developed anorexia in high
+          school. Four years later and she still struggles every day with her
+          recovery.
+          <br /><br />
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ROW #3 -->
+
+  <section>
+    <ul>
+      <!-- COLUMN #1 -->
+      <li>
+        <h2>Unity Video Game</h2>
+        <video poster="/img/projects/demonivaras.jpg" controls>
+          <source src="/video/demonivaras.mp4" type="video/mp4" />
+          <img
+            src="/img/projects/demonivaras.jpg"
+            alt="Game Demo Video"
+            title="Game Demo Video"
+          />
+        </video>
+        <div class="subtitle">
+          <a href="/video/demonivaras.mp4" target="_blank"
+            >View full size video <img src="/img/brand/link.png"
+          /></a>
+        </div>
+        <p></p>
+        <h5>Demonivaras</h5>
+        <p>
+          Brief: Develop a fun-filled 2D video game in Unity. Rats have risen
+          from the sewers and taken over the streets of New York City, stealing
+          everything they can get their gnarly teeth on in order to appease
+          their greedy underlord, Karni Mata, who remains hidden deep beneath
+          the streets of the city. The Mayor has declared a state of emergency
+          and hired the infamous thief, Avaritia, to take back the city.
+          Desperate times call for desperate measures.
+          <br /><br />
+        </p>
+      </li>
+      <!-- COLUMN #2 -->
+      <li>
+        <h2>Your Project</h2>
+        <figure>
+          <img
+            class="gallery"
+            src="/img/projects/your-project.jpg"
+            alt="Match Maker Game"
+            title="Match Maker"
+          />
+        </figure>
+        <div class="subtitle">
+          <a href="/contact-me" target="_blank"
+            >Contact me <img src="/img/brand/link.png"
+          /></a>
+        </div>
+        <p></p>
+        <h5>Top Secret</h5>
+        <p>
+          We're saving the best for last! Are you ready to get started on the
+          next great app?
+          <a href="/contact-me">Contact me</a> today!
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FOOTER SECTION -->
+
+  <!-- Copyright -->
+  <%- include ('partials/bottom_nav.ejs') %>
+  <!--Script Section-->
+  <%- include ('partials/footer.ejs') %>
 </main>
-
-<!-- FOOTER SECTION -->
-
-<!-- Copyright -->
-<%- include ('partials/bottom_nav.ejs') %>
-<!--Script Section-->
-<%- include ('partials/footer.ejs') %>
