@@ -1,5 +1,5 @@
 <!--
-Filename: about-me.ejs
+Filename: index.ejs
 Author: Samantha Shirley (#301240317)
 Date: 09/27/2023
 -->
@@ -10,14 +10,17 @@ Date: 09/27/2023
 
 <%- include ('partials/main_nav.ejs') %>
 
-<!-- MAIN BODY SECTION -->
+<!-- MAIN -->
 
 <main id="home" class="container">
   <header id="hero">
     <section></section>
   </header>
-  <section class="container">
-    <section class="col1">
+
+   <section>
+    <ul>
+      <!-- COLUMN #1 -->
+      <li>
       <div>
         <h2>Hello World!</h2>
         <p></p>
@@ -26,12 +29,10 @@ Date: 09/27/2023
           of coding to create beautiful apps, websites, and games. Welcome to a
           world in which art and code ignite to make magic.
         </p>
-
         <p>
           Whether it's a web page, mobile app or the next big video game, isn't
           it time for some fresh ideas... And a splash of magic!
         </p>
-
         <p>Sound interesting?</p>
         <p>
           Come discover a little byte <a href="/about-me">About Me</a> and the
@@ -40,10 +41,9 @@ Date: 09/27/2023
           for you.
         </p>
         <p>Let's make the web a beautiful place to live, work and play!</p>
+        <p></p>
       </div>
-
       <hr />
-
       <div>
         <aside>
           <ul>
@@ -98,24 +98,24 @@ Date: 09/27/2023
           </ul>
         </aside>
       </div>
-    </section>
-
-    <section class="col2">
-      <figure id="me">
-        <img
+    </li>
+    <!-- COLUMN #2 -->
+    <li>
+      <figure>
+        <img class="gallery"
           src="/img/home/iDesign.jpg"
           alt="Web App Design"
           title="Web App Design"
         />
       </figure>
-      <figure id="me">
-        <img
+      <figure>
+        <img class="gallery"
           src="/img/home/iCode.jpg"
           alt="Web App Code"
           title="Web App Code"
         />
       </figure>
-    </section>
+    </li>
   </section>
 </main>
 

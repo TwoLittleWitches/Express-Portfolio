@@ -4,7 +4,10 @@ Author: Samantha Shirley (#301240317)
 Date: 09/27/2023
 */
 
-/* PAGE */
+/****************************************************************************
+  GENERAL
+****************************************************************************/
+
 * {
   box-sizing: border-box;
 }
@@ -19,18 +22,20 @@ body {
 html {
   font-size: calc(16px + (24 - 16) * (100vw - 400px) / (2560 - 400));
 }
-header {
-  font-size: 1.2em;
+
+header img {
+  width: 100%;
 }
+
 main {
   font-size: 1em;
-  flex: 1;
-  margin-bottom: 300px;
+  margin-bottom: 0px;
 }
 
 figure {
   margin: 0 auto;
 }
+
 footer {
   clear: both;
   margin-top: 1em;
@@ -39,61 +44,6 @@ footer .navbar-text {
   margin: 0 auto;
   padding: 20px;
 }
-.subtitle,
-.subtitle a {
-  color: gray;
-  font-size: 0.8em;
-  margin-top: -10px;
-}
-
-header img {
-  width: 100%;
-}
-
-@media screen and (max-width: 598px) {
-  header,
-  main {
-    font-size: 1.2em;
-  }
-}
-
-/* HEADER */
-#home header section {
-  background: url("/img/hero/index-hero-image.jpg") top;
-  background-size: cover;
-  min-height: 240px;
-  border-top-right-radius: 10em;
-}
-
-#about header section {
-  background: url("/img/hero/about-hero-image.jpg") top;
-  background-size: cover;
-  min-height: 240px;
-  border-top-right-radius: 10em;
-}
-
-#projects header section {
-  background: url("/img/hero/projects-hero-image.jpg") top;
-  background-size: cover;
-  min-height: 240px;
-  border-top-right-radius: 10em;
-}
-
-#services header section {
-  background: url("/img/hero/services-hero-image.jpg") top;
-  background-size: cover;
-  min-height: 240px;
-  border-top-right-radius: 10em;
-}
-
-#contact header section {
-  background: url("/img/hero/contact-hero-image.jpg") top;
-  background-size: cover;
-  min-height: 240px;
-  border-top-right-radius: 10em;
-}
-
-/* GENERAL */
 
 a:link {
   text-decoration: none;
@@ -109,7 +59,62 @@ a:active {
   text-decoration: none;
 }
 
-/* NAV MENU */
+.subtitle,
+.subtitle a {
+  color: gray;
+  font-size: 0.8em;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 598px) {
+  header,
+  main {
+    font-size: 1.2em;
+  }
+}
+
+/****************************************************************************
+  PAGE HEADERS
+****************************************************************************/
+
+#home header section {
+  background: url("/img/hero/index-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 300px;
+  border-top-right-radius: 10em;
+}
+
+#about header section {
+  background: url("/img/hero/about-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 300px;
+  border-top-right-radius: 10em;
+}
+
+#projects header section {
+  background: url("/img/hero/projects-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 300px;
+  border-top-right-radius: 10em;
+}
+
+#services header section {
+  background: url("/img/hero/services-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 300px;
+  border-top-right-radius: 10em;
+}
+
+#contact header section {
+  background: url("/img/hero/contact-hero-image.jpg") top;
+  background-size: cover;
+  min-height: 300px;
+  border-top-right-radius: 10em;
+}
+
+/****************************************************************************
+  NAV MENU
+****************************************************************************/
 
 ul.navbar-nav {
   list-style: none; /* Remove the bullet */
@@ -127,7 +132,14 @@ li.nav-item .active,
   color: crimson;
 }
 
-/* MAIN */
+/****************************************************************************
+  MAIN SECTION LAYOUTS
+****************************************************************************/
+
+main section {
+  padding: 1rem 1rem 0 1rem;
+}
+
 main section.col1 {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1em;
@@ -135,17 +147,19 @@ main section.col1 {
   display: inline;
   float: left;
   margin-bottom: 1em;
-  margin-top: 1em;
+  margin-top: 0em;
   margin-left: 0px;
   margin-right: 1em;
   padding: 2em;
   width: 58%;
 }
+
 main section.col1 div {
   box-sizing: border-box;
   display: inline;
   width: 100%;
 }
+
 main section.col2 {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 1em;
@@ -153,10 +167,11 @@ main section.col2 {
   display: inline;
   float: left;
   margin-bottom: 1.3em;
-  margin-top: 1em;
+  margin-top: 0em;
   padding: 1em;
   width: 40%;
 }
+
 main section.col2 img,
 img.gallery {
   border: 1px solid grey;
@@ -166,24 +181,16 @@ img.gallery {
   padding: 10px;
   width: 100%;
 }
+
 main#about section.col2 {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 1em;
-  box-sizing: border-box;
-  display: inline;
-  float: right;
+  background-color: white;
+  border: 1px solid grey;
   margin-bottom: 0em;
-  margin-top: 1em;
-  padding: 0em;
-  width: 40%;
 }
+
 main#about section.col2 img {
   margin: 0px auto;
   padding: 0px;
-}
-
-main section {
-  padding: 1rem 1rem 0 1rem;
 }
 
 main section > ul {
@@ -204,6 +211,7 @@ main section > ul > li {
   position: relative;
   padding: 1em;
 }
+
 main section > ul > li > p {
   line-height: 1.2;
   padding: 0.5em 0.75em;
@@ -217,14 +225,15 @@ main section > ul > li > p > a {
   color: #444444;
 }
 
-main section > ul > li > p > a:hover {
-  font-weight: bold;
-}
+/****************************************************************************
+  SOCIAL MEDIA MENU
+****************************************************************************/
 
 main aside {
   margin: 0 auto;
   text-align: center;
 }
+
 main aside img {
   width: 5vw;
 }
@@ -237,7 +246,6 @@ main aside ul {
 main aside ul li {
   color: gray;
   display: inline;
-
   list-style-type: none;
   margin: 0.1em;
   padding: 10px;
@@ -247,17 +255,11 @@ main aside ul li a {
   color: gray;
   text-decoration: none;
 }
-#contact main > section ul li {
-  display: block;
-  margin: 0 auto;
-  background-color: lightgrey;
-  padding: 2em;
-  width: 100%;
-  border-radius: 0.5rem;
-  list-style-type: none;
-  min-height: 150px;
-  position: relative;
-}
+
+/****************************************************************************
+  VIDEO 
+****************************************************************************/
+
 main#projects section ul li video {
   background-color: white;
   display: block;
@@ -269,8 +271,9 @@ main#projects section ul li video {
   margin: 1em auto;
   margin-bottom: 0.4em;
 }
+
 /****************************************************************************
-  4. FORM STYLES 
+  FORM STYLES 
 ****************************************************************************/
 
 fieldset {
